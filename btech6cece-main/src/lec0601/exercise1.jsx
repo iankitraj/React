@@ -8,39 +8,42 @@ function TableDisp() {
   const [num2, setNum2] = useState(0);
   return (
     <div>
+      <label>First Number:
       <input
         type="number"
-        value={num1}
+        value={num1} 
         onChange={(e) => setNum1(Number(e.target.value))}
-      />
+      /></label>
+      <br /><br />
+      <label>Second number:
       <input
         type="number"
         value={num2}
         onChange={(e) => setNum2(Number(e.target.value))}
-      />
-      <br />
-      {num1}
-      <label>+</label>
-      {num2}
-      <label>=</label>
+      /> </label> 
+      <br /> <br />
+      {/* {num1} */}
+      <label>Addition of two number</label>
+      {/* {num2} */}
+      <label> = </label>
       {num1 + num2}
       <br />
-      {num1}
-      <label>-</label>
-      {num2}
-      <label>=</label>
+      {/* {num1} */}
+      <label>Substraction of two number</label>
+      {/* {num2} */}
+      <label> = </label>
       {num1 - num2}
       <br />
-      {num1}
-      <label>*</label>
-      {num2}
-      <label>=</label>
+      {/* {num1} */}
+      <label>Multiplication of two number</label>
+      {/* {num2} */}
+      <label> = </label>
       {num1 * num2}
       <br />
-      {num1}
-      <label>/</label>
-      {num2}
-      <label>=</label>
+      {/* {num1} */}
+      <label> Division of two number</label>
+      {/* {num2} */}
+      <label> = </label>
       {num1 / num2}
     </div>
   );
